@@ -3,8 +3,8 @@ package redis
 import (
 	"crypto/tls"
 	"github.com/go-kratos/kratos/v2/log"
-	"github.com/tx7do/kratos-transport/broker"
-	"github.com/tx7do/kratos-transport/broker/redis"
+	"github.com/go-sohunjug/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/broker/redis"
 	"time"
 )
 

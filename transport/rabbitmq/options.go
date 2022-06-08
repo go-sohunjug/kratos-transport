@@ -4,8 +4,8 @@ import (
 	"context"
 	"crypto/tls"
 	"github.com/go-kratos/kratos/v2/log"
-	"github.com/tx7do/kratos-transport/broker"
-	"github.com/tx7do/kratos-transport/broker/rabbitmq"
+	"github.com/go-sohunjug/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/broker/rabbitmq"
 )
 
 type ServerOption func(o *Server)

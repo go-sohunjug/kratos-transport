@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"github.com/go-kratos/kratos/v2"
-	"github.com/tx7do/kratos-transport/transport/websocket"
+	"github.com/go-sohunjug/kratos-transport/transport/websocket"
 )
 
 func main() {

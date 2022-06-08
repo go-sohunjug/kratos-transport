@@ -6,8 +6,8 @@ import (
 	"log"
 
 	"github.com/go-kratos/kratos/v2"
-	"github.com/tx7do/kratos-transport/broker"
-	"github.com/tx7do/kratos-transport/transport/mqtt"
+	"github.com/go-sohunjug/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/transport/mqtt"
 )
 
 const (

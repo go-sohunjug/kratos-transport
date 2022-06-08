@@ -2,7 +2,7 @@ package text
 
 import (
 	"fmt"
-	"github.com/tx7do/kratos-transport/codec"
+	"github.com/go-sohunjug/kratos-transport/codec"
 	"io"
 )
 

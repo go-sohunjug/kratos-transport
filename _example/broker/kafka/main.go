@@ -7,8 +7,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/tx7do/kratos-transport/broker"
-	"github.com/tx7do/kratos-transport/broker/kafka"
+	"github.com/go-sohunjug/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/broker/kafka"
 )
 
 func main() {

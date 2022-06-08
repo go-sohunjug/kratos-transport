@@ -6,8 +6,8 @@ import (
 	"github.com/go-kratos/kratos/v2"
 	"log"
 
-	"github.com/tx7do/kratos-transport/broker"
-	"github.com/tx7do/kratos-transport/transport/kafka"
+	"github.com/go-sohunjug/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/transport/kafka"
 )
 
 func main() {

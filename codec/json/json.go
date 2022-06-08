@@ -7,7 +7,7 @@ import (
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/tx7do/kratos-transport/codec"
+	"github.com/go-sohunjug/kratos-transport/codec"
 )
 
 type Codec struct {

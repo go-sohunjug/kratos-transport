@@ -1,4 +1,4 @@
-module github.com/tx7do/kratos-transport
+module github.com/go-sohunjug/kratos-transport
 
 go 1.17
 
