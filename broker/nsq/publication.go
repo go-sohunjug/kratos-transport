@@ -2,7 +2,7 @@ package nsq
 
 import (
 	NSQ "github.com/nsqio/go-nsq"
-	"github.com/tx7do/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/broker"
 )
 
 type publication struct {

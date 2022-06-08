@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/tx7do/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/broker"
 	"math/rand"
 	"os"
 	"os/signal"

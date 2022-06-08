@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/tx7do/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/broker"
 )
 
 type durableQueueKey struct{}

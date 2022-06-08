@@ -3,7 +3,7 @@ package redis
 import (
 	"context"
 	"fmt"
-	"github.com/tx7do/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/broker"
 	"time"
 )
 

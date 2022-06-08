@@ -1,6 +1,6 @@
 package mqtt
 
-import "github.com/tx7do/kratos-transport/broker"
+import "github.com/go-sohunjug/kratos-transport/broker"
 
 type publication struct {
 	topic string

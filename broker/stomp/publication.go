@@ -2,7 +2,7 @@ package stomp
 
 import (
 	"github.com/go-stomp/stomp/v3"
-	"github.com/tx7do/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/broker"
 )
 
 type publication struct {

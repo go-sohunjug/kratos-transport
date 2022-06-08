@@ -3,8 +3,8 @@ package redis
 import (
 	"fmt"
 	"github.com/gomodule/redigo/redis"
-	"github.com/tx7do/kratos-transport/broker"
-	"github.com/tx7do/kratos-transport/codec"
+	"github.com/go-sohunjug/kratos-transport/broker"
+	"github.com/go-sohunjug/kratos-transport/codec"
 )
 
 type subscriber struct {
