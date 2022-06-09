@@ -1,8 +1,8 @@
 package rabbitmq
 
 import (
-	"github.com/streadway/amqp"
 	"github.com/go-sohunjug/kratos-transport/broker"
+	"github.com/streadway/amqp"
 )
 
 type publication struct {
@@ -27,3 +27,5 @@ func (p *publication) Topic() string {
 func (p *publication) Message() *broker.Message {
 	return p.m
 }
+
+func (p *publication) Reply(m *broker.Message) { }

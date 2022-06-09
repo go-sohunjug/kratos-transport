@@ -23,3 +23,5 @@ func (p *publication) Ack() error {
 func (p *publication) Error() error {
 	return p.err
 }
+
+func (p *publication) Reply(m *broker.Message) { }

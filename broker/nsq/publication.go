@@ -1,8 +1,8 @@
 package nsq
 
 import (
-	NSQ "github.com/nsqio/go-nsq"
 	"github.com/go-sohunjug/kratos-transport/broker"
+	NSQ "github.com/nsqio/go-nsq"
 )
 
 type publication struct {
@@ -29,3 +29,5 @@ func (p *publication) Ack() error {
 func (p *publication) Error() error {
 	return p.err
 }
+
+func (p *publication) Reply(m *broker.Message) { }

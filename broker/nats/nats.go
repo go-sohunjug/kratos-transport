@@ -7,8 +7,8 @@ import (
 	"sync"
 
 	"github.com/go-kratos/kratos/v2/log"
-	NATS "github.com/nats-io/nats.go"
 	"github.com/go-sohunjug/kratos-transport/broker"
+	NATS "github.com/nats-io/nats.go"
 )
 
 type natsBroker struct {
@@ -183,7 +183,7 @@ func (n *natsBroker) Subscribe(topic string, handler broker.Handler, opts ...bro
 
 	fn := func(msg *NATS.Msg) {
 		var m broker.Message
-		pub := &publication{t: msg.Subject}
+		pub := &publication{topic: msg.Subject, reply: msg.Reply, s: n}
 		eh := n.opts.ErrorHandler
 
 		m.Header = natsHeaderToMap(msg.Header)

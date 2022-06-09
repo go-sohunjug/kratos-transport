@@ -3,13 +3,15 @@ package nats
 import "github.com/go-sohunjug/kratos-transport/broker"
 
 type publication struct {
-	t   string
+	topic   string
+	reply string
 	err error
+	s *natsBroker
 	m   *broker.Message
 }
 
 func (p *publication) Topic() string {
-	return p.t
+	return p.topic
 }
 
 func (p *publication) Message() *broker.Message {
@@ -22,4 +24,8 @@ func (p *publication) Ack() error {
 
 func (p *publication) Error() error {
 	return p.err
+}
+
+func (p *publication) Reply(m *broker.Message) {
+	p.s.Publish(p.reply, m)
 }

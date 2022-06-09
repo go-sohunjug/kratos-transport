@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/go-kratos/kratos/v2/log"
+	"github.com/go-sohunjug/kratos-transport/broker"
 	"github.com/google/uuid"
 	KAFKA "github.com/segmentio/kafka-go"
-	"github.com/go-sohunjug/kratos-transport/broker"
 )
 
 type kafkaBroker struct {

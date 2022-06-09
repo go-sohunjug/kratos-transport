@@ -2,8 +2,9 @@ package kafka
 
 import (
 	"context"
-	KAFKA "github.com/segmentio/kafka-go"
+
 	"github.com/go-sohunjug/kratos-transport/broker"
+	KAFKA "github.com/segmentio/kafka-go"
 )
 
 type publication struct {
@@ -30,3 +31,5 @@ func (p *publication) Ack() error {
 func (p *publication) Error() error {
 	return p.err
 }
+
+func (p *publication) Reply(m *broker.Message) { }

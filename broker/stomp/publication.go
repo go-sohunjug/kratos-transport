@@ -1,8 +1,8 @@
 package stomp
 
 import (
-	"github.com/go-stomp/stomp/v3"
 	"github.com/go-sohunjug/kratos-transport/broker"
+	"github.com/go-stomp/stomp/v3"
 )
 
 type publication struct {
@@ -28,3 +28,5 @@ func (p *publication) Topic() string {
 func (p *publication) Message() *broker.Message {
 	return p.m
 }
+
+func (p *publication) Reply(m *broker.Message) { }

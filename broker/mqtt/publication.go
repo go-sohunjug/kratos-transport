@@ -23,3 +23,5 @@ func (m *publication) Topic() string {
 func (m *publication) Message() *broker.Message {
 	return m.msg
 }
+
+func (m *publication) Reply(msg *broker.Message) { }

@@ -14,7 +14,7 @@ type Event interface {
 	Topic() string
 	Message() *Message
 	Ack() error
-	Reply(m *Message)
+	Reply(m *Message) 
 	Error() error
 }
 
